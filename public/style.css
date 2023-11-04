@@ -1,0 +1,204 @@
+
+:root{
+    --success: rgb(31, 158, 14);
+    --danger:red;
+    --primary:blue;
+    --info:rgb(0, 174, 255);
+    --warning:yellow;
+    --orange:orange;
+    --dark:black;
+    --light:white;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+    margin: 5px 3px;
+}
+.link{
+    text-decoration: none;
+    color: var(--dark);
+}
+.input{
+    width: 100%;
+    display: block;
+    outline: none;
+    border: 1px solid var(--dark);
+    border-radius: 3px;
+    margin: 5px 0;
+    padding: 5px 10px;
+}
+.is-invalid{
+    border: 1px solid var(--danger);
+}
+a{
+    text-decoration: none;
+}
+.b{
+    font-weight: bold;
+}
+.bb{
+    font-weight: bolder;
+}
+
+.container{
+    margin: 10px auto;
+    padding: 20px;
+    max-width: 900px;
+}
+/* button */
+.button{
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    margin: 2px;
+    font-weight: bold;
+}
+
+.button-sm{
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    padding: 2px 5px;
+    margin: 2px;
+}
+
+.button-success{
+    color: var(--light);
+    border: 1px solid var(--success);
+    background-color: var(--success);
+}
+.button-orange{
+    color: var(--light);
+    border: 1px solid var(--orange);
+    background-color: var(--orange);
+}
+.button-danger{
+    color: var(--light);
+    border: 1px solid var(--danger);
+    background-color: var(--danger);
+}
+.button-primary{
+    color: var(--light);
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+}
+.button-info{
+    color: var(--light);
+    border: 1px solid var(--info);
+    background-color: var(--info);
+}
+.button-warning{
+    color: var(--dark);
+    border: 1px solid var(--warning);
+    background-color: var(--warning);
+}
+
+/* display flex */
+.flex{
+    display: flex;
+}
+.fWrap{
+    flex-wrap: wrap;
+}
+.row{
+    flex-direction: row;
+}
+.column{
+    flex-direction: column;
+}
+.fJCenter{
+    justify-content: center;
+}
+.fJaround{
+    justify-content: space-around;
+}
+.fJBetween{
+    justify-content: space-between;
+}
+.fJEnd{
+    justify-content: flex-end;
+}
+.fACenter{
+    align-items: center;
+}
+
+/* navbar  */
+
+nav{
+    height: 60px;
+    position: sticky;
+    top: 0.1px;
+    padding: 10px 20px;
+}
+nav a{
+    color: var(--light);
+}
+.navbar-brand{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.box-centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: calc(100vh - 60px);
+
+
+}
+.rounded{
+    border-radius: 5px;
+}
+.dataCards{
+    color: var(--light);
+    border-radius: 5px;
+    padding:10px ;
+    margin: 5px 0;
+}
+.active-border{
+    border: 3px solid var(--primary);
+}
+
+.justify{
+    text-align: justify;
+  text-justify: inter-word;
+}
+/* media query  660px*/
+
+@media only screen and (max-width: 660px) {
+    #searchBar{
+        flex-wrap: wrap;
+    }
+    #searchBar button{
+        width: 49%;
+    }
+    .container{
+        margin: 5px auto;
+        padding: 5px
+    }
+    #searchingInput{
+        margin: 3px !important;
+    }
+  }
+@media only screen and (max-width: 450px) {
+
+    #searchBar button{
+        width: 100%;
+    }
+  }
+
+
+
+
+
+
+
