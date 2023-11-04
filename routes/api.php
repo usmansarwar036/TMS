@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::resource('task', TaskController::class);
+Route::put('status', [TaskController::class, 'editStatus']);
+Route::delete('deleteAll', [TaskController::class, 'deleteAll']);
