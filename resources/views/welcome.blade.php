@@ -143,6 +143,9 @@
 
                         `
                     });
+                    if (dataCardsContainerContent == '') {
+                        dataCardsContainerContent = '<p style="text-align:center">No task found</p>'
+                    }
                     dataCardsContainer = document.getElementById('dataCardsContainer');
                     dataCardsContainer.innerHTML = dataCardsContainerContent;
                 });
