@@ -3,7 +3,7 @@
 @section('content')
     <div class="box-centered">
         <div class="rounded" style="border: 1px solid var(--danger)">
-            <div class="rounded" style="background: var(--danger); color: var(--light); padding:10px">
+            <div class="rounded bb" style="background: var(--danger); color: var(--light); padding:10px">
                 {{ __('Register') }}
             </div>
             <form style="padding: 20px; width: 300px" method="POST" action="{{ route('register') }}">
@@ -15,7 +15,7 @@
                         value="{{ old('name') }}" required autocomplete="name" autofocus>
 
                     @error('name')
-                        <span style="color: --var(danger)">
+                        <span style="color: var(--danger)">
                             {{ $message }}
                         </span>
                     @enderror
@@ -26,7 +26,7 @@
                         value="{{ old('email') }}" required autocomplete="email">
 
                     @error('email')
-                        <span style="color: --var(danger)">
+                        <span style="color: var(--danger)">
                             {{ $message }}
                         </span>
                     @enderror
@@ -38,7 +38,7 @@
                         autocomplete="new-password">
 
                     @error('password')
-                        <span style="color: --var(danger)">
+                        <span style="color: var(--danger)">
                             {{ $message }}
                         </span>
                     @enderror

@@ -3,7 +3,7 @@
 @section('content')
     <div class="box-centered">
         <div class="rounded" style="border: 1px solid var(--success)">
-            <div class="rounded" style="background: var(--success); color: var(--light); padding:10px">
+            <div class="rounded bb" style="background: var(--success); color: var(--light); padding:10px">
                 {{ __('Login') }}
             </div>
             <form style="padding: 20px; width: 300px" method="POST" action="{{ route('login') }}">
@@ -15,7 +15,7 @@
                         autocomplete="email" autofocus>
 
                     @error('email')
-                        <span style="color: --var(danger)">
+                        <span style="color: var(--danger)">
                             {{ $message }}
                         </span>
                     @enderror
@@ -27,7 +27,7 @@
                         autocomplete="current-password">
 
                     @error('password')
-                        <span style="color: --var(danger)">
+                        <span style="color: var(--danger)">
                             {{ $message }}
                         </span>
                     @enderror
