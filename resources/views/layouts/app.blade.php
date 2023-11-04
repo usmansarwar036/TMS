@@ -21,7 +21,7 @@
 
 <body>
     <nav class="flex fJBetween fACenter" style="background: var(--info); color: var(--light)">
-        <a class="navbar-brand" href="{{ url('/') }}">
+        <a class="navbar-brand" href="{{ url('/home') }}">
             TMS
         </a>
         <ul class="flex">
